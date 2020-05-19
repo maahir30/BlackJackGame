@@ -117,31 +117,31 @@ def show_all(player,dealer):
     
 def player_busts(player,dealer,chips):
     chips.lose_bet()
-    print("Player has BUST. You have lost the game along with your bet of " + str(chips.bet) + ".")
+    print("\n\nPlayer has BUST. You have lost the game along with your bet of " + str(chips.bet) + ".")
     print("\nYou now have " + str(chips.total) + " chips left.")
     
     
 
 def player_wins(player,dealer,chips):
     chips.win_bet()
-    print("Player has WON. You have won your bet of " + str(chips.bet) + ".")
+    print("\n\nPlayer has WON. You have won your bet of " + str(chips.bet) + ".")
     print("\nYou now have " + str(chips.total) + " chips in total.")
     
 
 def dealer_busts(player,dealer,chips):
     chips.win_bet()
-    print("Dealer has BUST. You won the game along with your bet of " + str(chips.bet) + ".")
+    print("\n\nDealer has BUST. You won the game along with your bet of " + str(chips.bet) + ".")
     print("\nYou now have " + str(chips.total) + " chips in total.")
 
 
 def dealer_wins(player,dealer,chips):
     chips.lose_bet()
-    print("Dealer has WON. You have lost the game along with your bet of " + str(chips.bet) + ".")
+    print("\n\nDealer has WON. You have lost the game along with your bet of " + str(chips.bet) + ".")
     print("\nYou now have " + str(chips.total) + " chips left.")
     
     
 def push(player,dealer,chips):
-    print('Player and Dealer have tied. PUSH') 
+    print('\n\nPlayer and Dealer have tied. PUSH') 
 
 game_on = True
 print('\n\n\n\nWelcome to BlackJack! Note that you start of each round 100 chips. Your chips reset back to 100 at the end of each round.')
@@ -217,7 +217,7 @@ while game_on:
     
     # Ask to play again     
     while True :
-        play_again = input('Do you want to play again? Answer y or n.')
+        play_again = input('\n\nDo you want to play again? Answer y or n.')
         if play_again[0].lower() == 'y':
             game_on = True
             break
