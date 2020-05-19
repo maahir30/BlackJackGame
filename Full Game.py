@@ -72,7 +72,7 @@ class Chips:
 def take_bet(chips):
     while True:
         try:
-            chips.bet = int(input("Please enter an integer for your bet: "))
+            chips.bet = int(input("\n\n\n\n\nPlease enter an integer for your bet: "))
         except:
             print("Looks like you did not enter an integer! Please try again.")
             continue
@@ -81,7 +81,7 @@ def take_bet(chips):
                 print('Sorry, your bet of ' + str(chips.bet) + ' is more than you have.')
                 continue  
             else:
-                print("Your bet of " + str(chips.bet) + " has been placed!")
+                print("\nYour bet of " + str(chips.bet) + " has been placed!")
                 break
                
 def hit(deck,hand):
@@ -93,7 +93,7 @@ def hit_or_stand(deck,hand):
 
         
     while True :
-        hit_stand = input("Do you want to hit or stand? Answer h or s.")
+        hit_stand = input("\n\nDo you want to hit or stand? Answer h or s.")
         if hit_stand[0].lower() == 'h':
             hit(deck,hand)
             print('You have hit.')
