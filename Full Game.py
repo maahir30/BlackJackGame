@@ -166,7 +166,7 @@ while game_on:
     
     # Set up the Player's chips
     player_chips = Chips()
-    print('You currently have ' + str(self.total) + ' chips in total.'
+    print('You currently have ' + str(self.total) + ' chips in total.')
     
     # Prompt the Player for their bet
     take_bet(player_chips)
