@@ -144,7 +144,7 @@ def push(player,dealer,chips):
     print('Player and Dealer have tied. PUSH') 
 
 game_on = True
-print('Welcome to BlackJack!')
+print('\n\n\n\nWelcome to BlackJack!')
 while game_on:
 
     
