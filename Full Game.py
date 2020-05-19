@@ -145,6 +145,7 @@ def push(player,dealer,chips):
 
 game_on = True
 print('Welcome to BlackJack!')
+print('Note: You start of with 100 chips.')
 while game_on:
 
     
@@ -166,7 +167,6 @@ while game_on:
     
     # Set up the Player's chips
     player_chips = Chips()
-    print('Note: You start of with 100 chips.')
     
     # Prompt the Player for their bet
     take_bet(player_chips)
